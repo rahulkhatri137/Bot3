@@ -657,18 +657,17 @@ public class XiaoxindadaSGSIs extends Command {
                 /*
                  * Send SGSI message
                  */
-                sendMessage.setText("<b>" + gsiCmdObj.getGsi() + " SGSI</b>"
+                sendMessage.setText("<b> " + gsiCmdObj.getGsi() + " SGSI</b>"
                         + "\n<b>From</b> " + getModelOfOutput(toolPath + "output")
-                        + "\n\n<b>Information</b>\n<code>" + descSGSI
+                        + "\n\n<b>Information</b>\n<code>" + descGSI
                         + "</code>\n\n"
-                        + noticeSGSI
-                        + developerNoticeSGSI
-                        + "<b>✵ RK137 GSI ✵</b>" + "\n"
-                        + "<a href=\"https://t.me/rk137gsi\">GSI Channel</a> | <a href=\"https://github.com/rk137gsi\">GitHub</a> |  <a href=\"https://sourceforge.net/projects/gsis137/files/SGSI\">SF Folder</a>"
-                        + "\n\n<b>Credits :</b>" + "\n"
+                        + noticeGSI
+                        + developerNoticeGSI
+                        + "<b>Credits</b>" + "\n"
                         + "<a href=\"https://github.com/Xiaoxindada\">Xiaoxindada</a>" + " | "
-                        + "<a href=\"https://github.com/TrebleExperience/Bot3\">Bo³+t</a>" + " | "
-                        + "<a href=\"https://t.me/Velosh\">Velosh</a>"                    
+                        + "<a href=\"https://github.com/TrebleExperience/Bot3\">Bo³+t</a>" + "\n\n"
+                        + "<b>RK137 GSI</b>" + "\n"
+                        + "<a href=\"https://t.me/rk137gsi\">Channel</a> | <a href=\"https://sourceforge.net/projects/gsis137/files/SGSI\">SourceForge Folder</a> | <a href=\"https://github.com/rk137gsi\">GitHub</a>"
                 );
                 sendMessage.setChatId(Objects.requireNonNull(SourceForgeSetup.getSfConf("bot-announcement-id")));
                 idSGSI = bot.sendMessageAsyncBase(sendMessage, update);
