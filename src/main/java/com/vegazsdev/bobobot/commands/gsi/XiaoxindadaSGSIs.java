@@ -559,7 +559,7 @@ public class XiaoxindadaSGSIs extends Command {
                                         odmOverlays.set(FilenameUtils.getBaseName(fileName.toString()) + "." + FilenameUtils.getExtension(fileName.toString()));
                                     }
                                 }
-                                if (fileName.toString().contains(".txt") && !fileName.toString().contains("build_info")) {
+                                if (fileName.toString().contains(".txt") && fileName.toString().contains("build_info")) {
                                     infoSGSI = fileName.toString();
                                 }
                             });
@@ -664,9 +664,9 @@ public class XiaoxindadaSGSIs extends Command {
                         + noticeSGSI
                         + developerNoticeSGSI
                         + "<b>✵ RK137 GSI ✵</b>" + "\n"
-                        + "<a href=\"https://t.me/rk137gsi\">GSI Channel</a> | "<a href=\"https://github.com/rk137gsi\">GitHub</a> |  <a href=\"https://sourceforge.net/projects/gsis137/files/SGSI\">SF Folder</a>"
+                        + "<a href=\"https://t.me/rk137gsi\">GSI Channel</a> | <a href=\"https://github.com/rk137gsi\">GitHub</a> |  <a href=\"https://sourceforge.net/projects/gsis137/files/SGSI\">SF Folder</a>"
                         + "\n\n<b>Credits :</b>" + "\n"
-                        + "<a href=\"https://github.com/Xiaoxindada\">Xiaoxindada Abdi</a>" + " | "
+                        + "<a href=\"https://github.com/Xiaoxindada\">Xiaoxindada</a>" + " | "
                         + "<a href=\"https://github.com/TrebleExperience/Bot3\">Bo³+t</a>" + " | "
                         + "<a href=\"https://t.me/Velosh\">Velosh</a>"                    
                 );
