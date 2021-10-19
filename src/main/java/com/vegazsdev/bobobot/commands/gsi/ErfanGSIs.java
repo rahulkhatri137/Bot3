@@ -585,6 +585,7 @@ public class ErfanGSIs extends Command {
                 if (gsiCmdObj.getGsi().contains(":")) {
                     gsiCmdObj.setGsi(gsiCmdObj.getGsi().split(":")[1]);
                     gsiCmdObj.setGsi(gsiCmdObj.getGsi().replace("-", " "));
+                    gsiCmdObj.setGsi(gsiCmdObj.getGsi().replace("_", " "));
                 }
 
                 /*
